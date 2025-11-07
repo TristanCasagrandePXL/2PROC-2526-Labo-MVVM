@@ -58,7 +58,8 @@ namespace Todo.UI.ViewModels
 
         private void LoadData()
         {
-           TodoDb.GetTodoItems(10).ForEach(item => TodoItems.Add(item));
+            Console.WriteLine("Loading data...");
+            TodoDb.GetTodoItems(10).ForEach(item => TodoItems.Add(item));
         }
         private void AddTodo()
         {
