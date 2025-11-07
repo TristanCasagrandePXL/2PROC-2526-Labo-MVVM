@@ -27,6 +27,12 @@
         </Style>
     </ContentPage.Resources>
 
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior 
+            EventName="Appearing"
+            Command="{Binding LoadDataCommand}" />
+    </ContentPage.Behaviors>
+
     <VerticalStackLayout Padding="20" Spacing="5">
 
         <!-- Title -->
